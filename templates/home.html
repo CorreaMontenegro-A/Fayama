@@ -1,0 +1,236 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="bg-primary vh-75 position-relative overflow-hidden">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-6 text-white">
+                <h1 class="display-4 fw-bold mb-3 animate__animated animate__fadeInLeft">
+                    TU EMPRESA DE<br>
+                    <span class="text-uppercase">Domótica e<br>Inmótica</span>
+                </h1>
+                <p class="lead mb-4 animate__animated animate__fadeInLeft animate__delay-1s">
+                    EL FUTURO Y LA COMODIDAD DE TU<br>
+                    HOGAR AL ALCANCE DE TU MANO
+                </p>
+                <div class="d-flex gap-3 animate__animated animate__fadeInUp animate__delay-2s">
+                    <a href="{{ url_for('main.servicios') }}" class="btn btn-light px-4 py-2">Nuestros Servicios</a>
+                    <a href="{{ url_for('main.contacto') }}" class="btn btn-outline-light px-4 py-2">Contactar</a>
+                </div>
+            </div>
+            <div class="col-lg-6 position-relative animate__animated animate__fadeInRight">
+                <img src="{{ url_for('static', filename='img/hero-illustration.svg') }}" alt="Smart Home Illustration" class="img-fluid">
+                <div class="circle-decoration"></div>
+                <div class="dots-decoration"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm hover-lift h-100">
+                    <div class="card-body p-4">
+                        <div class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mb-4" style="width: 60px; height: 60px;">
+                            <i class="fas fa-home fa-2x text-primary"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Domótica</h3>
+                        <p class="text-muted mb-0">Automatización inteligente para hogares. Control total de iluminación, climatización, seguridad y más.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm hover-lift h-100">
+                    <div class="card-body p-4">
+                        <div class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mb-4" style="width: 60px; height: 60px;">
+                            <i class="fas fa-building fa-2x text-primary"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Inmótica</h3>
+                        <p class="text-muted mb-0">Soluciones de automatización para edificios comerciales y empresas. Gestión eficiente de recursos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm hover-lift h-100">
+                    <div class="card-body p-4">
+                        <div class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mb-4" style="width: 60px; height: 60px;">
+                            <i class="fas fa-project-diagram fa-2x text-primary"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Proyectos</h3>
+                        <p class="text-muted mb-0">Diseño e implementación de proyectos personalizados. Soluciones adaptadas a tus necesidades.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row g-4 text-center">
+            <div class="col-6 col-md-3">
+                <div class="display-4 fw-bold">+500</div>
+                <p class="mb-0">Hogares Automatizados</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="display-4 fw-bold">+10</div>
+                <p class="mb-0">Años de Experiencia</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="display-4 fw-bold">98%</div>
+                <p class="mb-0">Clientes Satisfechos</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="display-4 fw-bold">24/7</div>
+                <p class="mb-0">Soporte Técnico</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Demo Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="display-5 mb-4">Vive la Experiencia</h2>
+                <p class="lead mb-4">Descubre cómo la domótica puede transformar tu día a día. Desde el control de la iluminación hasta la gestión de la climatización, todo al alcance de tu mano.</p>
+                <div class="row g-4 mb-4">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-robot fa-2x text-primary me-3"></i>
+                            <div>
+                                <h4 class="h5 mb-1">Automatización</h4>
+                                <p class="small text-muted mb-0">Escenas personalizadas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-microphone fa-2x text-primary me-3"></i>
+                            <div>
+                                <h4 class="h5 mb-1">Control por Voz</h4>
+                                <p class="small text-muted mb-0">Compatible con Alexa y Google</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-chart-line fa-2x text-primary me-3"></i>
+                            <div>
+                                <h4 class="h5 mb-1">Eficiencia</h4>
+                                <p class="small text-muted mb-0">Ahorro energético garantizado</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-lock fa-2x text-primary me-3"></i>
+                            <div>
+                                <h4 class="h5 mb-1">Seguridad</h4>
+                                <p class="small text-muted mb-0">Protección total 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="{{ url_for('static', filename='img/smart-home-demo.jpg') }}" alt="Demo Smart Home" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-4">Lo que Dicen Nuestros Clientes</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body p-4">
+                        <p class="lead fst-italic mb-4">"La mejor inversión que hemos hecho en nuestro hogar. Ahora todo es más cómodo y seguro."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="{{ url_for('static', filename='img/client1.jpg') }}" alt="Cliente" class="rounded-circle me-3" width="60" height="60">
+                            <div>
+                                <h5 class="mb-1">María García</h5>
+                                <p class="text-muted mb-0">Málaga Centro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body p-4">
+                        <p class="lead fst-italic mb-4">"El ahorro en la factura de la luz ha sido notable. La domótica ha cambiado nuestra forma de vivir."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="{{ url_for('static', filename='img/client2.jpg') }}" alt="Cliente" class="rounded-circle me-3" width="60" height="60">
+                            <div>
+                                <h5 class="mb-1">Antonio López</h5>
+                                <p class="text-muted mb-0">Rincón de la Victoria</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body p-4">
+                        <p class="lead fst-italic mb-4">"El servicio técnico es excepcional. Siempre están disponibles cuando los necesitamos."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="{{ url_for('static', filename='img/client3.jpg') }}" alt="Cliente" class="rounded-circle me-3" width="60" height="60">
+                            <div>
+                                <h5 class="mb-1">Laura Martínez</h5>
+                                <p class="text-muted mb-0">Torremolinos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Brands Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center h1 mb-5">Trabajamos con las Mejores Marcas</h2>
+        <div class="row g-4 align-items-center justify-content-center">
+            <div class="col-6 col-md-3">
+                <img src="{{ url_for('static', filename='img/brand1.png') }}" alt="Marca 1" class="img-fluid grayscale">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="{{ url_for('static', filename='img/brand2.png') }}" alt="Marca 2" class="img-fluid grayscale">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="{{ url_for('static', filename='img/brand3.png') }}" alt="Marca 3" class="img-fluid grayscale">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="{{ url_for('static', filename='img/brand4.png') }}" alt="Marca 4" class="img-fluid grayscale">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-primary text-white">
+    <div class="container text-center">
+        <h2 class="h1 mb-4">¿Listo para Transformar tu Hogar?</h2>
+        <p class="lead mb-5">Contáctanos para una consulta gratuita y personalizada</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="{{ url_for('main.contacto') }}" class="btn btn-light btn-lg px-4">Solicitar Consulta</a>
+            <a href="tel:+34612345678" class="btn btn-outline-light btn-lg px-4">
+                <i class="fas fa-phone me-2"></i>Llamar Ahora
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %} 

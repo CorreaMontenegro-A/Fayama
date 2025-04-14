@@ -1,10 +1,12 @@
-from flask import Flask, render_template
+from flask import Flask
+from routes.main import main
 
+# Creación de la aplicación Flask
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-    return render_template('index.html')
+# Registro del blueprint principal
+app.register_blueprint(main)
 
+# Configuración para modo debug
 if __name__ == '__main__':
     app.run(debug=True)
